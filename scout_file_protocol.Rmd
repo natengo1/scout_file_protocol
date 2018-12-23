@@ -1,0 +1,453 @@
+---
+title: "USA MNT Scout File (.dvw) Protocol"
+author: "USA Men's Volleyball"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+This document will provide and illustrate the process of preparing scout files (.dvw) to be used for scouting opponents for USA Men's National Team. For the purposes of this illustration, we will use Match 64 from World League in 2017, Brazil (BRA) v. France (FRA).
+
+# Match Video and Scout File
+
+Matches will be downloaded from VolleyMetrics. Contact Nate for credentials to log in to the USA Men's account to download opponent matches. 
+
+## Finding Matches on VolleyMetrics
+
+Once you are logged into the VolleyMetrics Portal, click on the "Matches" button on the panel on the right hand side. Use the search tab to input the team you are scouting. In this example, start typing "Brazil" and you will see suggestions pop up below the search tab. Click on the appropriate team ( Brazil National Team (Men's) ) in this case. Scroll through to find the appropriate match, and click on that match.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/q1zRiPFgh4c" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+After you have found the correct match and opened it, download the Video File and the scout file. There are buttons to do each on the bottom right hand corner of the match window. Click each button to download the files respectively.
+
+## Naming and Placing the Files
+
+Now that the video and scout files have been downloaded, we will create a match folder in C:/Dvs_Video. Create a folder for the match with the following naming protocol:
+
+YY Comp MN Team1 v Team2
+
+YY is the year (2017 -> 17)
+
+Comp is the Competition (World League -> WL, contact Nate if unsure of competition abbreviation), all CAPS
+
+MN is the match number (if match number is 1-9, we will use either 01 - 09 or 001 - 009, depending on total number of matches in the competition; you can find the match number on the competition's website)
+
+Team1 is the three letter team code as listed in order by the competition/VolleyMetrics (Brazil -> BRA), all CAPS
+
+v (versus), lowercase
+
+Team2 is the three letter team code as listed in order by the competition/VolleyMetrics (France -> FRA), all CAPS
+
+
+
+The FOLDER name for the match in our example would be:
+
+17 WL 64 BRA v FRA
+
+Move the video and .dvw file into this folder. Rename the video with the same protocol as the folder and include the VolleyMetrics Match ID number on the end of it. The VolleyMetrics Match ID number can be found on the end of the URL the respective match's VolleyMetrics page. In our example, the Match ID number is 20450.
+
+The VIDEO FILE name for the match in our example would be:
+
+17 WL 64 BRA v FRA 20450.mp4
+
+The scout file will follow a similar naming system as above. You will include the VolleyMetrics Match ID number and add "vm" the end of the file name to signify this is a match that was scouted by VolleyMetrics. All letters for scout file (.dvw) naming will be lowercase.
+
+The SCOUT FILE (.dvw) name for the match in our example would be:
+
+17 wl 64 bra v fra 20450 vm.dvw
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7daCCL--IQg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+Copy the newly named scout file and paste it in the appropriate season folder in the Data Volley 4 folder.
+
+# Data Volley 4 - Data Files and Options
+
+Before getting to cleaning scout files, contact Nate for all data files for the season including attack combinations and setter calls, as well as attack combination (.cmb) and setter call (.call) translation files. 
+
+In addition, be sure to match the following Scouting Options for each tab:
+
+<img src="C:/Users/NathanielNgo/Desktop/Scout File Cleaning/Scouting Options - Default Scouting.JPG" />
+
+<img src="C:/Users/NathanielNgo/Desktop/Scout File Cleaning/Scouting Options - General Scouting.JPG" />
+
+<img src="C:/Users/NathanielNgo/Desktop/Scout File Cleaning/Scouting Options - Synchronize.JPG" />
+
+Return to the homepage click on the Tables button on the top right corner. Click on the Attack Combinations tab and select Attack by Cones under the option "Select how you want to manage the attack directions:". 
+
+<img src="C:/Users/NathanielNgo/Desktop/Scout File Cleaning/Tables - Attack Combinations.JPG" />
+
+Once all options are consistent with those above and data files are in place, we are ready to clean scout files.
+
+# Setting Up the File
+
+## Primary Translation
+
+Find and open the file to be cleaned in your season. When you click on the file, Data Volley will detect a difference in attack combinations and setter calls. Select "Convert" under "Attack Combinations and Setter Calls" and click "Ok". The next window will ask you to "Select a scout to verify the compatibility between Combinations and Calls." Click "Next".
+
+On the following window, click on the folder icon to select an existing translation file. Select the file "vm.cmb" and click "Open". You will see a number of translations automatically filled in after opening the file. Click "Next".
+
+Follow a similar process in the next window by clicking on the folder icon. Select the file "vm.call" and click "Open". Translations will automatically be filled in here again. Click "Next".
+
+Confirm that the changes will be saved to the "Same file" and click "Save".
+
+A number of Control messages may pop up notifying you that some Attack Combinations and/or Setter Calls were not found and ask if you want to continue. Select "Yes" to all these windows and click "Ok" on the final window to finish the primary translation.
+
+Open the match once again, and the same "Check Tables" window will pop up. This time, leave the Attack Combinations and Setter Calls option to "Maintain" and select "Convert" under the Cones and Zones option. Click "Ok".
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0uquivofPrY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+## Link Video File to Scout
+
+After the primary translation process, click on the "Match" button on the top panel and click on "Playlist video". When the window pops up, navigate to the match folder you created in C:\Dvs_Video and click on the appropriate video file. Click "Open". You will see the video and some information of the video appear in the "Playlist video" window. If there is more than one video, click "Add" and repeat the same step until all videos appear on the "Playlist video" window. Once all videos are linked, click "Ok". 
+
+Open the scout file by click on the match information/score on the top middle area of the window. Open the video subsequently by click on the "Open video" button just to the right of the score.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jBVETjz1L5E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+## Re-synchronize Video with Smart Time
+
+The video and scout file will already be synchronized from VolleyMetrics, but re-synchronzing using "Smart Time" will make cleaning the file a bit more seamless. Click on the first serve code in the scout file so that the code is highlighted in the Codes List. Rewind the video a few seconds. You can achieve this using the hotkey (Shift + F10); hold Shift down and press F10 as many times as necessary to rewind video to the appropriate mark. Play the video (Shift + F9) until the ball is at the apex of the toss then pause the video (Shift + F9) at this point. At the bottom of the Codes List window, the second button from the left allows you to "Align all codes from the one selected." Click that button and when the subsequent window pops up, click "Ignores existing alignment and calculates the new positions using "Smart Time"." Click "Ok" when done and close the Code Search window that will pop up.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/tUpxP6bkan8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+# Cleaning the Code
+
+The following will define and explain which and how codes will be "cleaned" as well as how they will be used for scouting purposes. Unless you find otherwise, the most efficient way to clean the file is to go down point by point and code by code (as opposed to using the Code Search function).
+
+## Serving
+
+Serve codes need to be checked for the following:
+
+- Team Designation (* or a)
+
+- Player Number
+
+- Skill Type (H for Standing Float, M for Jump Float, and Q for Jump Spin)
+
+- Skill type is based upon what kind of ball is served - pay attention to servers who hit hybrids and make out whether there is top spin (SQ) or an attempt to float (SM) on the serve.
+
+- Serve Coordinate
+
+When inputting serve coordinates, select the serve code, play the video (Shift + F9) and pause it when the server makes contact (Shift + F9). Input the starting coordinate. Play the video (Shift + F9) again until the passer makes contact or when the ball is at the appropriate end spot. Pause the video at this point (Shift + F9) and input the end coordinate of the serve.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/g71nuqtGZC0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+Serve coordinates will be input from the spot where the server makes contact and end where the receiver passes the ball, or the ball lands if out of bounds, in the net, or a clean ace. An example of how serve coordinates will be displayed in scouting reports is shown below. If the ball is served into the net, modify the code (Hit Enter when the serve code is highlighted in the Codes List) and enter "N" under "Extended".
+
+<img src="C:/Users/NathanielNgo/Desktop/Scout File Cleaning/Serve Coordinates Example.JPG" />
+
+## Reception
+
+Reception codes need to be checked for the following:
+
+- Team Designation (* or a)
+
+- Player Number
+
+- Skill Type (H for Standing Float, M for Jump Float, and Q for Jump Spin)
+
+- Skill Grade (# for Perfect Pass, + for Good Pass, ! for Medium Pass, - for Bad Pass, / for Over Pass, = for Reception Error)
+
+- Extended Skill Type ('O' for Overhead, 'W' for intended short serve, blank for anything else)
+
+- Number of Passers (Extended Code)
+
+Reception Coordinates will be pulled from Serving Coordinates, so there is NO need to clean up the coordinates on Reception codes. 
+
+#### Reception Grading
+
+- Perfect (#) Reception: Generally within 1.5 meters and setter is not stressed at all.
+
+<img src="C:/Users/NathanielNgo/Desktop/Scout File Cleaning/PP.PNG" height="200px" width="200px" />
+
+- Good (+) Reception: Pass between 1.5 meters to 3 meters, or tight to net but still able to set all options.
+
+<img src="C:/Users/NathanielNgo/Desktop/Scout File Cleaning/GP.PNG" height="200px" width="200px" />
+
+- Medium (!) Reception: Pass beyond 3 meters or close to either sideline by the net, but setter is still able to set with some tempo or tight to net with limited options.
+
+<img src="C:/Users/NathanielNgo/Desktop/Scout File Cleaning/MP.PNG" height="200px" width="200px" />
+
+- Bad (-) Reception: Pass way off the net (setter is very stressed) or not able to attack; also, very tight pass and setter is only able to attempt to save the ball from going over.
+
+<img src="C:/Users/NathanielNgo/Desktop/Scout File Cleaning/BP.PNG" height="200px" width="200px" />
+
+- Over (/) Reception: Direct Over Pass.
+
+- Reception Error (=): Service Ace.
+
+General rule of thumb: move down one grade for (reasonably lower pass). Bump setting is almost always a Bad (-) Reception.
+
+## Setting
+
+Set codes should be checked for the following:
+
+- Team Designation (* or a)
+
+- Player Number
+
+- Setter Call and Target (ONLY for position setters, non-position setters should NOT have a corresponding Setter Call)
+
+- Set Coordinate (where the ball is set from)
+
+When inputting the Set Coordinate, select and highlight the set code in the Codes List, play (Shift + F9) the video until the player is making contact if the player is setting from the ground. If the player is jump setting, watch to see if the player is jumping straight up and down. If so, pause the video just as the player is taking off to get a good sense of where to put the coordinate. If the player broad jumps to the ball, make the best estimate possible given his take off and landing spots. 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qVaccW1nh2o" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+#### Setter Calls and Target
+
+Setter Calls should ONLY be designated for position setters. Non-position setters should have NO setter calls designated for any of their sets. There are only 6 potential Setter Calls to be used:
+
+- KF: MB runs a tight quick (Front 1, F1) in front of the setter.
+
+- KP: MB runs a medium spaced quick (Push) in front of the setter.
+
+- KG: MB runs a wide quick (Gap/31) in front of the setter.
+
+- KB: MB runs a quick behind (Back 1, B1) the setter.
+
+- KS: MB runs a Slide off one foot behind the setter.
+
+- KO: MB is not a viable option and/or does not run a route on the attack.
+
+Setter calls KF, KP, and KG are based on distance from the setter, NOT position along the net. 
+
+##### KF
+
+<img src="C:/Users/NathanielNgo/Desktop/Scout File Cleaning/KF.JPG" height="300px" width="400px" />
+
+##### KP
+
+<img src="C:/Users/NathanielNgo/Desktop/Scout File Cleaning/KP.JPG" height="300px" width="400px" />
+
+##### KG
+
+<img src="C:/Users/NathanielNgo/Desktop/Scout File Cleaning/KG.JPG" height="300px" width="400px" />
+
+A position setter will NOT receive a Setter Call when the setter scrambles and throws a ball up high towards the middle of the net. 
+The Target code following the Setter Call represents the player who attacks the subsequent ball, and is defined as follows:
+
+- F: A4 attack (most commonly Go (PG), OS z4 (PH))
+
+- C: MB attack (most commonly F1 (LF), Push (LP), Gap (LG), B1 (LB), Slide (LS))
+
+- B: A2/A9 attack (most commonly Red (IR), OS z2 (I5), D IS (I0), D OS (ID))
+
+- P: Bic/Pipe attack (most commonly Bic (P8), 40 (I9))
+
+- S: Setter Jam (YS)*
+
+*Note: For Setter Jam, include a set code and a Setter Call for the Setter Jam attack. The Set Coordinate will be placed where contact is being made on the attack. 
+
+## Attacking
+
+Attacking codes need to be checked for the following:
+
+- Team Designation (* or a)
+
+- Player Number
+
+- Skill Grade (# for Kill, / for Block Error, = for Unforced Error, +-! for In Play Attack)
+
+- Extended Code Skt ('H' for Hard Spike, 'P' for Soft Spike/Roll Shot, 'T' for Tip)
+
+- Extended Code Ply (Number of blockers, 0-3 self-explanatory, 4 for late arriving MB with seam)
+
+- Extended Code Spc ('N' for attack into the net)
+
+- Attack End Coordinate or Attack Cone (whichever is appropriate, see below)
+
+#### Attack Coordinate vs. Attack Cone
+
+Attack direction will be scouted using either an end coordinate or an attack cone. If the attacker performs a Hard Spike (H) that does not change trajectory off the block, an end coordinate will be used. This includes Hard Spike (H) attacks that are killed in the court, dug by the opponent, errors that go out of bounds, and swings that take a micro-touch off the block and land out of bounds. 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pDd8pnyQP4o" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+All Soft Spikes (P) and Tips (T) will have an end coordinate. If an attacker Tips or Soft Spikes a ball into the block, place the end coordinate where the ball touches the block. 
+
+For Hard Spikes (H) that are touched on the block and have a significant change in lateral trajetory or is deflected high and easily played by the defending team, remove the end coordinate on the attack, review the video of the attack, and fill in the appropriate cone in which the attack "would have" gone to.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/QiF_vN8_F1Q" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+The following figure shows all OS z4 attacks by a player and how these distinctions are visualized. The numbers around the court are the number of hard attacks that are touched on the block with a trajectory headed toward that cone. You can see a clump of Tips (T, diamonds) and Soft Spikes (P, triangles) where a block would be against an OS z4 attack. Also notice the unforced errors (red) and high hands kills (black) that are placed off the court.
+
+<img src="C:/Users/NathanielNgo/Desktop/Scout File Cleaning/Attack Map.JPG" height="400px" width="200px" />
+
+Cones are defined in Data Volley 4 as the following: 
+
+<img src="C:/Users/NathanielNgo/Desktop/Scout File Cleaning/Cones.JPG" height="400px" width="600px" />
+
+#### In System/In Tempo vs. Out of System/High Ball Designations
+
+For attacks by pin attackers, you will be sure to distinguish whether an attack is In System/In Tempo or Out of System/High Ball. The key factor here is whether the player setting the ball is attempting to set the ball with speed or merely placing a ball high for a hitter to go attack. These distinctions need to be made for the following attack combinations:
+
+- Go (PG) vs. OS z4 (PH)
+
+- Red (IR) vs. OS z2 (I5)
+
+- D IS (I0) vs. D OS (ID)
+
+- Bic (P8)/40 (I9) vs. Pipe (PP)
+
+In general, any non-position setter set will take the High Ball designation unless there is a very obvious attempt to set an attacker with speed. In addition, some Bics will not be translated over from the VolleyMetrics file via the primary translation (VolleyMetrics Attack Combination 'XR'), so be on the lookout to manually translate those attack combinations to the appropriate 'P8' or 'I9' (depending on whether the Bic attack is in front or behind the setter respectively).
+
+#### MB Quick Attack Designations
+
+For attacks by Middle Blockers, reviewing each attack and giving the appropriate designation will be important. These designations are based upon distance away from the setter, NOT position along the net, as described and illustrated above with Setter Calls and Targets. Setter Calls and the subsequent Attack Combination for an attack by a MB MUST match (if they run a 'KF', they hit an 'LF', etc.). 
+
+#### Attacks With 0 Blockers vs. No (Blank) Blockers
+
+When checking the number of blockers on an Attack Code, be sure to distinguish between 0 Blockers and No (Blank) Blockers. An attack code will have 0 Blockers if the blockers make a false read and get juked out by the offense. If the attack is a kill, this becomes the one situation in which a Kill (A#) is followed by a Block Error (B=) AND a Dig Error (D=). If the attack is dug, the Attack Code will be followed by a Block Attack Past (B/) then the appropriate player's Dig and Dig Rating (D#,D+,D-,D/). 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/uvbfUqOQm7A" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+
+An attack will have No (Blank) Blockers, usually when the blockers DECIDE not to block and pull off, usually due to a set far off the net. In this situation, even if the attack is a Hard Spike (H), there will NOT be a need to add a Block (B) Code here.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zdKGQ9VGJuQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+## Blocking
+
+Blocking codes need to be checked for the following:
+
+- Team Designation (* or a)
+
+- Player Number
+
+- Skill Grade (See Below for Explanation/Defintions)
+
+#### Blocking Skill Grade
+
+Blocking grades are defined as the following:
+
+- B# (Stuff Block): Direct point from block
+
+- B+ (Controlled Block Touch): Block makes contact and deflects the ball in a way that makes it easy to dig the subsequent ball
+
+- B! (Block Covered): Ball is blocked back to defending side but covered and kept in play
+
+- B- (Non-Controlled Block Touch): A block touch that stays on the defending team's side in which a play by a defender can be made, except in the case of B+ (VolleyMetrics codes this as B!)
+
+- B/ (Attack Past): An attacker performs a Hard Spike (H) that goes past the blocker and is either a Kill or In-Play (does not apply for Unforced Attack Errors)
+
+- B= (Block Error): Ball is attacked off a blocker's hands and results directly in a point. Back row defenders do NOT have a chance to make a play on a B=
+
+VolleyMetrics codes what is defined as B! above as B/ and sometimes B+ as well. Be on the lookout for these and make the appropriate change to the Block Grade. 
+
+
+#### Attack Past (B/) 
+
+VolleyMetrics does NOT code B/ as defined above, so it will be your job to add B/ where appropriate. In the case of 1 Blocker with an Attack Past, the player receiving the B/ is trivial. In the case of 2 Blockers or a Hole Block (4) for a Pin Attack, review the attack trajectory. If the attack falls within Cone 1-4, the B/ will be attributed to the Pin Blocker. If the attack falls within Cone 5-7, the B/ will be attributed to the Middle Blocker. A couple examples are shown below.
+
+<img src="C:/Users/NathanielNgo/Desktop/Scout File Cleaning/Attack Past Go.JPG" height="400px" width="600px" />
+
+<img src="C:/Users/NathanielNgo/Desktop/Scout File Cleaning/Attack Past Red.JPG" height="400px" width="600px" />
+
+In the case of 3 Blockers, use a similar concept and divide the court three ways. An example is shown below.
+
+<img src="C:/Users/NathanielNgo/Desktop/Scout File Cleaning/Attack Past 3 Man.JPG" height="400px" width="600px" />
+
+For Quick Attacks, the B/ will generally go to the blocking MB unless it is clearly going past the help blocker.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lFsAEzbenvc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+## Digging
+
+Digging codes need to be checked for the following:
+
+- Team Designation (* or a)
+
+- Player Number
+
+- Skill Grade (See Below for Explanation/Defintions)
+
+#### Digging Skill Grade
+
+Digging skill grades are defined as the following:
+
+- D# (In System Dig): A dig that enables the (position) setter to set with tempo to multiple options
+
+- D+ (Out of System Dig): A dig that enables a player to set a ball out of system with little stress to get to the ball, but not with tempo
+
+- D- (Scramble Dig): A dig that forces a player to make a difficult set or does not allow for the defending team to attack
+
+- D/ (Over Dig): A dig that is returned over the net
+
+- D= (Dig Error): Attributed to a player who makes an attempt to dig a ball and results in a kill for the opponent or the player most responsible for a ball attacked in the court in which a play could have been made on
+
+#### Adding D=
+
+All Kill Attacks (except Over Pass Kills (YO)) will result in either a Block Error (B=) or a Dig Error (D=). On a Kill that lands in the court that takes no deflection (B/ or Soft Spike [P] or Tip [T]), or a playable block deflection (B-), a D= will be attributed to the player who most viable could have made a defensive play on the ball.
+
+Note: To save a step, it is possible to insert a B/ and a D= in the same Add Code Window. To do this, highlight the code after the attack and hit 'Insert' to add a code previous to the one you have highlighted in the Codes List. Enter the D= code followed by the B/ code, IN THAT ORDER. Data Volley will place the two codes in reverse order in the Codes List as shown in the clip below.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ea5i975U0UQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+#### Position Setter Dig
+
+A position setter will not receive a Dig Grade of D# on any dig.
+
+## Free Ball
+
+Free Ball codes need to be checked for the following:
+
+- Team Designation (* or a)
+
+- Player Number
+
+- Skill Grade (See Below for Explanation/Defintions)
+
+#### Free Ball Skill Grade
+
+Free Ball skill grades are graded similar to that of Reception (See Above). The only difference is a Free Ball Error (F=) will be attributed to a player not only if he RECEIVES a Free Ball and causes a direct point to the opponent, but also if the player attempts to SEND a Free Ball and causes a direct point to the opponent. This is the only case in which a Free Ball code is attributed to a player SENDING a Free Ball. All other Free Ball codes only describe the quality of the player's passing of a Free Ball.
+
+# Self Review of File
+
+Once you have gone through the file point by point and code by code, run a quick check on the following criteria:
+
+## Attack Combination Conversion
+
+After completing the cleaning process, SAVE (and SAVE often throughout the cleaning process) the file and return to the homepage. Reopen the file. You should NOT be prompted to Convert Attack Combinations or Setter Calls or Attack Cones. If this window pops up, use the Code Search function (Ctrl + R) and search through the file for potential leftover VolleyMetrics Attack Combinations (usually starting with 'X' or 'V'). Make any appropriate changes until the conversion prompt does not pop up anymore.
+
+## Attack Coordinates for all Soft Spikes (P) and Tips (T)
+
+Use the Code Search function (Ctrl + R) to search all Soft Spike Attacks and Tip Attacks and check that the arrow that indicates a coordinate is stored in that code is present. 
+
+<img src="C:/Users/NathanielNgo/Desktop/Scout File Cleaning/Attack P Search.JPG" height="459px" width="322px" />
+<img src="C:/Users/NathanielNgo/Desktop/Scout File Cleaning/Attack T Search.JPG" height="459px" width="322px" />
+
+## Attack Kills for all Hard Spikes (H)
+
+Use the Code Search function (Ctrl + R) to search all Kills on Hard Swings (H) and check that all Kills End with either a Block Error (B=) or Dig Error (D=).
+
+## Set Codes
+
+#### Setter Calls For Position Setters Only
+
+Use the Code Search function (Ctrl + R) to search all Sets with Setter Calls (as shown below) and check that only position setters have sets with Setter Calls. If there are Set Codes with Setter Calls that are not marked as one of the two position setters on the roster, take a look at the video correpsonding to that code and make appropriate changes. Do this for both teams.
+
+<img src="C:/Users/NathanielNgo/Desktop/Scout File Cleaning/Setter Call Search.JPG" height="447px" width="319px" />
+
+In this example, *01 and *09 are the only two position setters for Brazil. A further look into the Set Code with *16 (highlighted) is needed and an edit will need to be made. 
+
+#### Setter Calls For All Sets by Position Setters
+
+Once you have established which players are position setters, search all sets by each position setter. If there are Set Codes for position setters that do not have a Setter Call corresponding to it, make sure it is an appropriate situation where there should not be a Setter Call. Otherwise, edit as appropriate. Do this for both teams. 
+
+Note: VolleyMetrics does NOT include a "No Quick" Setter Call, so "KO" will need to be added to all "No Quick" sets from position setters.
+
+<img src="C:/Users/NathanielNgo/Desktop/Scout File Cleaning/Position Setter Sets.JPG" height="447px" width="319px" />
+
+## Unlisted Players
+
+Use the 'Page Down' and 'Page Up' Keys to quickly scroll through the Codes List to check that there are no codes highlighted in Red. If there are any such codes, review the video correpsonding to the Red Code(s) and make sure that the correct player and jersey number are assigned to that code. If the correct player is making contact with the ball on the code in question, make sure that the line up on the mini court matches that which is on the video.
+
+# Thank You!
+
+I sincerely appreciate you taking the time and effort to learning this system of coding and helping us, the USA Men's National Team Program, get closer to reaching our goals!
