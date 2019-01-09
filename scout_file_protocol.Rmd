@@ -121,6 +121,42 @@ The video and scout file will already be synchronized from VolleyMetrics, but re
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/tUpxP6bkan8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
+## Systematic Translations
+
+Before getting started on cleaning the code, there are a few easy changes we can make by searching for specific codes and altering them without having to watch the video yet. Highlight the Codes List window and open the Search function (Ctrl + R). Use this to search for the following:
+
+- Service errors in the net
+
+    - Search for all Serves that have an end zone of 2, 3, and 4 (do each one, one at a time). <img src="C:/Users/NathanielNgo/Desktop/Scout File Cleaning/Serve Net Error Search.JPG" />
+    
+    - In the Search window, select each serve, hit Enter to Modify the code. <img src="C:/Users/NathanielNgo/Desktop/Scout File Cleaning/Serve Net Error Codes.JPG" />
+    
+    
+    - Add 'N' to the Spc box under Extended. Hit Enter or OK to go to the next code. <img src="C:/Users/NathanielNgo/Desktop/Scout File Cleaning/Serve Net Error Modify.JPG" />
+
+- Negative Block Touch
+
+    - Search for all Blocks with a '!' grade. <img src="C:/Users/NathanielNgo/Desktop/Scout File Cleaning/Block Exclamation Search.JPG" />
+    
+    - Change the grade from '!' to '-'
+
+- Block to Cover
+
+    - Serach for all Blocks with a '/' grade. <img src="C:/Users/NathanielNgo/Desktop/Scout File Cleaning/Block Slash Search.JPG" />
+    
+    - Change the grade from '/' to '!'.
+    
+Note: It is important to do the Negative Block Touch and Block to Cover in that order so as not to mix them up if done in reverse.
+
+## "Disable the code positioning on the video"
+
+By default, if you highlight a code in the Codes List with a video open, the video will jump to the time stamp associated with that code automatically. When cleaning files, this can bog you down quite a bit. Before you get started with the actual cleaning portion of the process, click on the fifth button on the bottom of the Codes List (if you hover over the button, it should say "Disable the code positioning on the video") so that a little cross out symbol appears on it. This way, when you go to clean each code, the video will stay put where you left it so you can clean each code chronologically. If you are ready to move to the next serve or need to jump to a certain code/time stamp on the video, use the fourth button on the bottom of the code list (if you hover over this button, it should say "Go to the video position").
+
+<img src="C:/Users/NathanielNgo/Desktop/Scout File Cleaning/Bottom of Code List Menu.JPG" />
+
+<img src="C:/Users/NathanielNgo/Desktop/Scout File Cleaning/Positioning Disabled.JPG" />
+
+
 # Cleaning the Code
 
 The following will define and explain which and how codes will be "cleaned" as well as how they will be used for scouting purposes. Unless you find otherwise, the most efficient way to clean the file is to go down point by point and code by code (as opposed to using the Code Search function).
